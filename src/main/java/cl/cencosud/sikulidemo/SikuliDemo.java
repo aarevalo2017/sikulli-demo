@@ -8,8 +8,8 @@ public class SikuliDemo {
 
 	public static void main(String[] args) throws FindFailed, InterruptedException {
 		try {
+			Runtime.getRuntime().exec(PuttyObjects.PUTTY_EXEC);
 			 Screen screen = new Screen();
-			 screen.click(PuttyObjects.ICONO);
 			 Thread.sleep(1000);
 			 screen.type("boldo" + Key.TAB + "23");
 			 screen.click(PuttyObjects.OPT_TELNET);
